@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+}
+.carousel-item{
+    height: 95vh;
+}
+.shadow-Y{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.shadow-X{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 1%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+.item-count{
+    background-size: cover;
+    background-position: center;
+}
+.first-item{
+    background-image: url('img/my-hero-academia-season-7-key-art-wide.png');
+}
+.second-item{
+    background-image: url('img/shigaraki-rqol73pl6mp7yvz2.jpg');
+}
+.third-item{
+    background-image: url('img/943433.png');
+}
