@@ -38,3 +38,23 @@ body{
 .third-item{
     background-image: url('img/943433.png');
 }
+.card{
+    background-color: #111;
+    color: #FFF;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #333;
+}
+.nav-pills .nav-link.active{
+    background-color: #CCC;
+    color: #000;
+    font-weight: bold;
+}
+.nav-link{
+    color: #CCC;
+    &:hover{
+        color: #FFF;
+    }
+}
