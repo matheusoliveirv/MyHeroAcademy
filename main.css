@@ -50,9 +50,9 @@ body{
 .nav-pills .nav-link.active{
     background-color: #CCC;
     color: #000;
-    font-weight: bold;
 }
 .nav-link{
+    font-weight: bold;
     color: #CCC;
     &:hover{
         color: #FFF;
