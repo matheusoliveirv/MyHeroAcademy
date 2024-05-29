@@ -58,3 +58,43 @@ body{
         color: #FFF;
     }
 }
+header{
+    background: transparent;
+    transition: all ease 0.5s;   
+}
+ul.nav{
+    gap: 1rem;
+}
+.abas{
+    padding-top: 6rem;
+}
+.blur{
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+}
+.space{
+    max-height: 55vh;
+    /*border: 1px solid red;*/
+}
+.align{
+    display: flex;
+    align-items: center;
+    /*border: 1px solid yellow;*/
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.wallpaper{
+    max-height: 30rem;
+}
+.wallpaper img{
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

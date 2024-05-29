@@ -10,406 +10,437 @@
 </head>
 
 <body>
-    <div id="carousel-anime" class="carousel slide carousel-fade">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item item-count first-item active">
-                <div class="shadow-Y">
-                    <div class="shadow-X">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>7° Temporada de My Hero Academia</h2>
-                            <h5>Recapitule o trajeto até a temporada final</h5>
-                        </div>
-                    </div>
+    <header id="header" class="fixed-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png" width="170px" />
                 </div>
-            </div>
-            <div class="carousel-item item-count second-item">
-                <div class="shadow-Y">
-                    <div class="shadow-X">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>O despertar de Shigaraki</h2>
-                            <h5>Tomura Shigaraki sobrevive ao procedimento Nomu (mesmo que incompleto) e agora está atrás de obter o One For All.</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item item-count third-item">
-                <div class="shadow-Y">
-                    <div class="shadow-X">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Izuku Midoriya</h2>
-                            <h5>Acompanhe a evolução do personagem que herdou os poderes do Super Herói N°1.</h5>
-                        </div>
-                    </div>
-                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" class="active">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#carousel-anime">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resumo">Resumo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personagens">Personagens</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-anime"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-anime"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <div id="carousel-anime" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item item-count first-item active">
+                    <div class="shadow-Y">
+                        <div class="shadow-X">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>7° Temporada de My Hero Academia</h2>
+                                <h5>Recapitule o trajeto até a temporada final</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-count second-item">
+                    <div class="shadow-Y">
+                        <div class="shadow-X">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>O despertar de Shigaraki</h2>
+                                <h5>Tomura Shigaraki sobrevive ao procedimento Nomu (mesmo que incompleto) e agora está atrás de obter o One For All.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-count third-item">
+                    <div class="shadow-Y">
+                        <div class="shadow-X">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Izuku Midoriya</h2>
+                                <h5>Acompanhe a evolução do personagem que herdou os poderes do Super Herói N°1.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-anime"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-anime"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="resumo" class="abas px-4">
+            <h1 class="text-white p-4">Resumo das Temporadas</h1>
+            <div class="container-temporadas d-flex flex-column align-items-center">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#temp1" class="nav-link active" type="button">Temporada 1</button>
+                    <button data-bs-toggle="tab" data-bs-target="#temp2" class="nav-link" type="button">Temporada 2</button>
+                    <button data-bs-toggle="tab" data-bs-target="#temp3" class="nav-link" type="button">Temporada 3</button>
+                    <button data-bs-toggle="tab" data-bs-target="#temp4" class="nav-link" type="button">Temporada 4</button>
+                    <button data-bs-toggle="tab" data-bs-target="#temp5" class="nav-link" type="button">Temporada 5</button>
+                    <button data-bs-toggle="tab" data-bs-target="#temp6" class="nav-link" type="button">Temporada 6</button>
+                </nav>
+                <div class="tab-content text-white p-5">
+                    <div id="temp1" class="tab-pane active container-grid p-4">
+                        <div class="space row row-gap-5 d-flex justify-content-center">
+                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                                <div class="descricao">
+                                    <h2>Temporada 1</h2>
+                                    <p>Em um mundo habitado por super-humanos, há Izuku Midoriya, que ama super-heróis, e que nasceu sem poderes. No entanto, 
+                                        depois que o sonhador Izuku herda os poderes do melhor super-herói do mundo, All Might, suas esperanças de se tornar o 
+                                        melhor herói agora são possíveis. Uma vez matriculado na escola para heróis, UA, Izuku logo descobre que ser um herói é 
+                                        muito mais complicado do que parece.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="wallpaper">
+                                    <img src="img/season/season-1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="temp2" class="tab-pane container-grid p-4">
+                        <div class="space row row-gap-5 d-flex justify-content-center">
+                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                                <div class="descricao">
+                                    <h2>Temporada 2</h2>
+                                    <p>No Colégio UA, nem mesmo um ataque violento pode atrapalhar seu evento de maior prestígio: o festival de esportes da escola. Reconhecido 
+                                        em todo o Japão, este festival é uma oportunidade para os aspirantes a heróis mostrarem suas habilidades, tanto para o público quanto para os 
+                                        possíveis recrutadores.
+                                        No entanto, o caminho para a glória nunca é fácil, especialmente para Izuku Midoriya – cuja individualidade possui grande força bruta, mas também é 
+                                        extremamente ineficiente. Empurrado contra seus talentosos colegas de classe, como o fogo e o gelo que empunham Shoto Todoroki, Izuku deve utilizar 
+                                        sua inteligência afiada e dominar seus arredores para alcançar a vitória e provar ao mundo o seu valor.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="wallpaper">
+                                    <img src="img/season/season-2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="temp3" class="tab-pane container-grid p-4">
+                        <div class="space row row-gap-5 d-flex justify-content-center">
+                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                                <div class="descricao">
+                                    <h2>Temporada 3</h2>
+                                    <p>O verão está aí, e os heróis das Classes 1-A e 1-B vão para o campo de treinamento mais difícil de suas vidas! Um grupo de profissionais experientes 
+                                        levam as individualidades de todos a novas alturas enquanto os alunos enfrentam um desafio opressor após o outro. os elementos neste local secreto 
+                                        se tornam a menor de suas preocupações quando o treinamento de rotina se transforma em uma luta crítica pela sobrevivência.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="wallpaper">
+                                    <img src="img/season/season-3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="temp4" class="tab-pane container-grid p-4">
+                        <div class="space row row-gap-5 d-flex justify-content-center">
+                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                                <div class="descricao">
+                                    <h2>Temporada 4</h2>
+                                    <p>A temporada começa onde a 3ª temporada terminou com a introdução do The Big 3, e o programa de Residência de Heróis sendo estendido para os alunos 
+                                        do Primeiro Ano. Segue-se Izuko, Ochaco, Tsuyu, Eijiro com a participação de Mirio, Nejire e Tamaki do Terceiro Ano na Residência de Heróis e da 
+                                        Incursão aos Oito Preceitos da Morte com suas respectivas Agências de Herói designadas. Enquanto isso, Katsuki e Shoto participam do Curso Corretivo 
+                                        de Licença Provisória.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="wallpaper">
+                                    <img src="img/season/season-4.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="temp5" class="tab-pane container-grid p-4">
+                        <div class="space row row-gap-5 d-flex justify-content-center">
+                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                                <div class="descricao">
+                                    <h2>Temporada 5</h2>
+                                    <p>No quinto ano de My Hero Academia, a turma 1-A, classe de Midoriya e os outros, enfrentará a turma 1-B, que foi rapidamente apresentada durante 
+                                        a segunda temporada. Mas diferente de como aconteceu lá, os alunos de ambas as classes serão misturados na forma de vários times, que aí sim 
+                                        encararão uns aos outros.
+                                        Esta será uma ótima oportunidade para conhecer melhor esses personagens ainda pouco explorados, lhe dando um destaque maior e aumentando o 
+                                        universo do anime e sua gama de personagens.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="wallpaper">
+                                    <img src="img/season/season-5.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="temp6" class="tab-pane container-grid p-4">
+                        <div class="space row row-gap-5 d-flex justify-content-center">
+                            <div class="align col-sm-12 col-md-6 col-lg-4">
+                                <div class="descricao">
+                                    <h2>Temporada 6</h2>
+                                    <p>Com Bakugo e Todoroki, Deku está trabalhando e estudando no escritório do herói número um, Endeavor. Dando duro no melhor ambiente possível, ele 
+                                        está crescendo como herói e usando Blackwhip, uma nova individualidade que estava escondida no One For All. Enquanto isso, Tomura Shigaraki da Liga 
+                                        dos Vilões enfrenta o Exército de Libertação Metahumana, liderado por Re-Destro. Encurralado durante sua luta contra Re-Destro, ele recupera memórias 
+                                        esquecidas de sua terrível infância e seu poder é despertado. Ele toma a liderança do Exército de Libertação Metahumana, expande sua influência e agora 
+                                        deseja um novo poder para destruir tudo.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
+                                <div class="wallpaper">
+                                    <img src="img/season/season-6.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+        <div id="personagens" class="abas px-4">
+            <h1 class="text-white px-4">Personagens</h1>
+            <div class="container-personagens d-flex flex-column align-items-center">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Heróis</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Vilões</button>
+                </nav>
+                <div class="tab-content">
+                    <div id="aba1" class="tab-pane active container-grid p-4">
+                        <div class="row row-gap-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/All Might-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">All Might</h4>
+                                        <h5 class="card-subtitle">Individualidade: One For All</h5>
+                                        <p class="card-text"> É o tritagonista de My Hero Academia e o protagonista do arco do Hideout 
+                                            Raid Arc. All Might é o ex-herói profissional Nº 1 que carregou o título de Símbolo da Paz do mundo</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/Hellflame-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Endeavor</h4>
+                                        <h5 class="card-subtitle">Individualidade: Hellflame</h5>
+                                        <p class="card-text">Herói profissional que ao longo de sua carreira teve a maior cota de casos resolvidos da história, 
+                                            tendo sido o Herói Nº1 do Japão após a aposentadoria de All Might</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/Hawks-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Hawks</h4>
+                                        <h5 class="card-subtitle">Individualidade: Fierce Wings</h5>
+                                        <p class="card-text">Pro Hero No. 2. Hawks é incrívelmente poderoso, sendo extremamente adequado para a sua posição quanto herói número 1</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/Aizawa-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Eraser Head</h4>
+                                        <h5 class="card-subtitle">Individualidade: Apagar</h5>
+                                        <p class="card-text">É um Pro herói e o professor de sala de UA Grau de Classe 1-A. Apesar de seus traços apáticos, 
+                                            Shota genuinamente se preocupa com seus alunos e fará de tudo para protegê-los</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/Bakugou-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Bakugou</h4>
+                                        <h5 class="card-subtitle">Individualidade: Explosão</h5>
+                                        <p class="card-text">É um deuteragonista de My Hero Academia. É o rival do protagonista, Izuku Midoriya.
+                                            Brutal e sedento por sangue, ele costuma sorrir de uma forma estranho quando está em batalha.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/todoroki-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Shoto Todoroki</h4>
+                                        <h5 class="card-subtitle">Individualidade: Meio Frio, Meio Quente</h5>
+                                        <p class="card-text">É um deuteragonista de My Hero Academia. É filho de Endeavor e amigo de Izuku Midoriya.
+                                            Ele é bastante contante e comedido durante suas batalhas, podendo ficar calmo mesmo enquanto luta contra vilões.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/Togata-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Mirio Togata</h4>
+                                        <h5 class="card-subtitle">Individualidade: Permear</h5>
+                                        <p class="card-text">Aluno da classe 3-B no Colégio U.A. e um membro do The Big 3. 
+                                            Antes de Izuku Midoriya, Mirio foi o principal candidato para ser o sucessor de All Might e o herdeiro do One For All.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Heróis/Yaoyorozu-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Creati</h4>
+                                        <h5 class="card-subtitle">Individualidade: Criação</h5>
+                                        <p class="card-text">Uma estudante da U.A. que está treinando para se tornar uma heroína profissional. Ela é a Vice-Presidente da Classe 
+                                            1-A e entrou para a U.A por recomendações oficiais.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+    
+    
+                    <div id="aba2" class="tab-pane container-grid p-4">
+                        <div class="row row-gap-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/All for One - card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">All For One</h4>
+                                        <h5 class="card-subtitle">Individualidade: All For One</h5>
+                                        <p class="card-text">Vilão Rank-S, líder da Liga dos Vilões, mentor de Tomura Shigaraki e inimigo dos usuários do One For All. 
+                                            Foi um dos principais antagonistas do arco Hideout Raid. É um dos principais antagonistas de My Hero Academia.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/Dabi-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Dabi</h4>
+                                        <h5 class="card-subtitle">Individualidade: Cremation</h5>
+                                        <p class="card-text">Vilão Rank-B, membro da Liga dos Vilões e líder do Esquadrão de Ação da Vanguarda. 
+                                            Também é o filho mais velho de Endeavor e o irmão mais velho de Shoto.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/Dobrar-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Twice</h4>
+                                        <h5 class="card-subtitle">Individualidade: Double</h5>
+                                        <p class="card-text">Um antagonista membro da Liga dos Vilões e do Esquadrão de Ação da Vanguarda. Ele foi um dos principais antagonistas do Arco do Acampamento de Treinamento.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/Overhaul-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Overhaul</h4>
+                                        <h5 class="card-subtitle">Individualidade: Overhaul</h5>
+                                        <p class="card-text">Foi um vilão, Yakuza e líder do Shie Hassaikai. Foi o principal antagonista do arco Internship. É um dos principais antagonistas de My Hero Academia.
+                                            Overhaul é um sociopata anti-social, misterioso, obcecado em retornar ao mundo do jeito que era antes do fenômeno de Individualidade.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/Stain-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Stain</h4>
+                                        <h5 class="card-subtitle">Bloodcurdle</h5>
+                                        <p class="card-text">Vilão Rank-S e um grande antagonista da série de mangá/anime My Hero Academia. Ele é um vilão e ex-vigilante que é notório 
+                                            por matar muitos Pro Heroes que vão contra sua ideologia.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/Stress-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Redestro</h4>
+                                        <h5 class="card-subtitle">Individualidade: Stress</h5>
+                                        <p class="card-text">Ex-líder do Exército de Libertação e é um dos vilões mais fortes de My Hero Academia. Com sua individualdiade, conhecida como Stress, 
+                                            Rikiya pode transformar todo o estresse de seu corpo em força bruta.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/Toga-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Himiko Toga</h4>
+                                        <h5 class="card-subtitle">Transformar</h5>
+                                        <p class="card-text">É um dos principais antagonistas domangáeanimeMy Hero Academia .
+                                            Ela era membro da Liga dos Vilões , afiliada ao Esquadrão de Ação de Vanguarda e mais tarde se tornou um dos nove tenentes da Frente de Libertação Paranormal.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                <div class="card gap-2">
+                                    <img class="w-100 rounded-3" src="img/cards/Vilões/ninja-card.jpg" alt="">
+                                    <div class="card-body d-flex flex-column gap-4">
+                                        <h4 class="card-title">Spinner</h4>
+                                        <h5 class="card-subtitle">Gecko</h5>
+                                        <p class="card-text">Spinner é um vilão com uma obsessão ardente por Stain, um famoso assassino de heróis. Sua individualidade, Gecko, permite que ele adira a superfícies sólidas, 
+                                            dando-lhe uma agilidade e mobilidade excepcionais.</p>
+                                        <a href="#" class="btn btn-primary">Ver mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+    
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!--LAYOUT GRIDS-->
-    <div class="abas p-4">
-        <h1 class="text-white p-4">Personagens</h1>
-        <div class="container-personagens d-flex flex-column align-items-center">
-            <nav class="nav nav-pills">
-                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Heróis</button>
-                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Vilões</button>
-            </nav>
-            <div class="tab-content">
-                <div id="aba1" class="tab-pane active container-grid p-4">
-                    <div class="row row-gap-5">
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/All Might-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">All Might</h4>
-                                    <h5 class="card-subtitle">Individualidade: One For All</h5>
-                                    <p class="card-text"> É o tritagonista de My Hero Academia e o protagonista do arco do Hideout 
-                                        Raid Arc. All Might é o ex-herói profissional Nº 1 que carregou o título de Símbolo da Paz do mundo</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/Hellflame-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Endeavor</h4>
-                                    <h5 class="card-subtitle">Individualidade: Hellflame</h5>
-                                    <p class="card-text">Herói profissional que ao longo de sua carreira teve a maior cota de casos resolvidos da história, 
-                                        tendo sido o Herói Nº1 do Japão após a aposentadoria de All Might</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/Hawks-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Hawks</h4>
-                                    <h5 class="card-subtitle">Individualidade: Fierce Wings</h5>
-                                    <p class="card-text">Pro Hero No. 2. Hawks é incrívelmente poderoso, sendo extremamente adequado para a sua posição quanto herói número 1</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/Aizawa-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Eraser Head</h4>
-                                    <h5 class="card-subtitle">Individualidade: Apagar</h5>
-                                    <p class="card-text">É um Pro herói e o professor de sala de UA Grau de Classe 1-A. Apesar de seus traços apáticos, 
-                                        Shota genuinamente se preocupa com seus alunos e fará de tudo para protegê-los</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/Bakugou-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Bakugou</h4>
-                                    <h5 class="card-subtitle">Individualidade: Explosão</h5>
-                                    <p class="card-text">É um deuteragonista de My Hero Academia. É o rival do protagonista, Izuku Midoriya.
-                                        Brutal e sedento por sangue, ele costuma sorrir de uma forma estranho quando está em batalha.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/todoroki-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Shoto Todoroki</h4>
-                                    <h5 class="card-subtitle">Individualidade: Meio Frio, Meio Quente</h5>
-                                    <p class="card-text">É um deuteragonista de My Hero Academia. É filho de Endeavor e amigo de Izuku Midoriya.
-                                        Ele é bastante contante e comedido durante suas batalhas, podendo ficar calmo mesmo enquanto luta contra vilões.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/Togata-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Mirio Togata</h4>
-                                    <h5 class="card-subtitle">Individualidade: Permear</h5>
-                                    <p class="card-text">Aluno da classe 3-B no Colégio U.A. e um membro do The Big 3. 
-                                        Antes de Izuku Midoriya, Mirio foi o principal candidato para ser o sucessor de All Might e o herdeiro do One For All.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Heróis/Yaoyorozu-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Creati</h4>
-                                    <h5 class="card-subtitle">Individualidade: Criação</h5>
-                                    <p class="card-text">Uma estudante da U.A. que está treinando para se tornar uma heroína profissional. Ela é a Vice-Presidente da Classe 
-                                        1-A e entrou para a U.A por recomendações oficiais.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-
-
-
-
-
-                <div id="aba2" class="tab-pane container-grid p-4">
-                    <div class="row row-gap-5">
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/All for One - card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">All For One</h4>
-                                    <h5 class="card-subtitle">Individualidade: All For One</h5>
-                                    <p class="card-text">Vilão Rank-S, líder da Liga dos Vilões, mentor de Tomura Shigaraki e inimigo dos usuários do One For All. 
-                                        Foi um dos principais antagonistas do arco Hideout Raid. É um dos principais antagonistas de My Hero Academia.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/Dabi-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Dabi</h4>
-                                    <h5 class="card-subtitle">Individualidade: Cremation</h5>
-                                    <p class="card-text">Vilão Rank-B, membro da Liga dos Vilões e líder do Esquadrão de Ação da Vanguarda. 
-                                        Também é o filho mais velho de Endeavor e o irmão mais velho de Shoto.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/Dobrar-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Twice</h4>
-                                    <h5 class="card-subtitle">Individualidade: Double</h5>
-                                    <p class="card-text">Um antagonista membro da Liga dos Vilões e do Esquadrão de Ação da Vanguarda. Ele foi um dos principais antagonistas do Arco do Acampamento de Treinamento.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/Overhaul-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Overhaul</h4>
-                                    <h5 class="card-subtitle">Individualidade: Overhaul</h5>
-                                    <p class="card-text">Foi um vilão, Yakuza e líder do Shie Hassaikai. Foi o principal antagonista do arco Internship. É um dos principais antagonistas de My Hero Academia.
-                                        Overhaul é um sociopata anti-social, misterioso, obcecado em retornar ao mundo do jeito que era antes do fenômeno de Individualidade.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/Stain-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Stain</h4>
-                                    <h5 class="card-subtitle">Bloodcurdle</h5>
-                                    <p class="card-text">Vilão Rank-S e um grande antagonista da série de mangá/anime My Hero Academia. Ele é um vilão e ex-vigilante que é notório 
-                                        por matar muitos Pro Heroes que vão contra sua ideologia.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/Stress-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Redestro</h4>
-                                    <h5 class="card-subtitle">Individualidade: Stress</h5>
-                                    <p class="card-text">Ex-líder do Exército de Libertação e é um dos vilões mais fortes de My Hero Academia. Com sua individualdiade, conhecida como Stress, 
-                                        Rikiya pode transformar todo o estresse de seu corpo em força bruta.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/Toga-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Himiko Toga</h4>
-                                    <h5 class="card-subtitle">Transformar</h5>
-                                    <p class="card-text">É um dos principais antagonistas domangáeanimeMy Hero Academia .
-                                        Ela era membro da Liga dos Vilões , afiliada ao Esquadrão de Ação de Vanguarda e mais tarde se tornou um dos nove tenentes da Frente de Libertação Paranormal.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                            <div class="card gap-2">
-                                <img class="w-100 rounded-3" src="img/cards/Vilões/ninja-card.jpg" alt="">
-                                <div class="card-body d-flex flex-column gap-4">
-                                    <h4 class="card-title">Spinner</h4>
-                                    <h5 class="card-subtitle">Gecko</h5>
-                                    <p class="card-text">Spinner é um vilão com uma obsessão ardente por Stain, um famoso assassino de heróis. Sua individualidade, Gecko, permite que ele adira a superfícies sólidas, 
-                                        dando-lhe uma agilidade e mobilidade excepcionais.</p>
-                                    <a href="#" class="btn btn-primary">Ver mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-    <div class="container-grid p-4">
-        <div class="row row-gap-5">
-            <!--<div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/All for One - card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/Dabi-card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/Dobrar-card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/Overhaul-card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/Stain-card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/Stress-card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/Toga-card.jpg" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <img class="w-100 rounded-3" src="img/cards/ninja-card.jpg" alt="">
-            </div>-->
-            <!--<div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/All for One - card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">All For One</h4>
-                        <h5 class="card-subtitle">Individualidade: Todos para Um</h5>
-                        <p class="card-text">Vilão Rank-S, líder da Liga dos Vilões, mentor de Tomura Shigaraki e inimigo dos usuários do One For All. 
-                            Foi um dos principais antagonistas do arco Hideout Raid. É um dos principais antagonistas de My Hero Academia.</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/Dabi-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Dabi</h4>
-                        <h5 class="card-subtitle">Individualidade: Cremation</h5>
-                        <p class="card-text">vilão Rank-B, membro da Liga dos Vilões e líder do Esquadrão de Ação da Vanguarda. 
-                            Também é o filho mais velho de Endeavor e o irmão mais velho de Shoto.</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/Dobrar-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Twice</h4>
-                        <h5 class="card-subtitle">Individualidade: Double</h5>
-                        <p class="card-text">um antagonista membro da Liga dos Vilões e do Esquadrão de Ação da Vanguarda. Ele foi um dos principais antagonistas do Arco do Acampamento de Treinamento.</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/Overhaul-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Título</h4>
-                        <h5 class="card-subtitle">Subtítulo</h5>
-                        <p class="card-text">Descrição sobre</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/Stain-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Título</h4>
-                        <h5 class="card-subtitle">Subtítulo</h5>
-                        <p class="card-text">Descrição sobre</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/Stress-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Título</h4>
-                        <h5 class="card-subtitle">Subtítulo</h5>
-                        <p class="card-text">Descrição sobre</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/Toga-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Título</h4>
-                        <h5 class="card-subtitle">Subtítulo</h5>
-                        <p class="card-text">Descrição sobre</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card gap-2">
-                    <img class="w-100 rounded-3" src="img/cards/ninja-card.jpg" alt="">
-                    <div class="card-body d-flex flex-column gap-4">
-                        <h4 class="card-title">Título</h4>
-                        <h5 class="card-subtitle">Subtítulo</h5>
-                        <p class="card-text">Descrição sobre</p>
-                        <a href="#" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </div>-->
-
-
-
-
-
-        </div>
-    </div>
-    <!--CARDS-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="function.js"></script>
 </body>
 
 </html>
